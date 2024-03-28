@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩‍💻SheCodes-LandingPage</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+      div {
+        display: block;
+      }
+      li {
+        color: #fecc18;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        padding: 20px;
+        display: block;
+        float: right;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        transition: all 300ms ease-in-out;
+      }
+      li a:hover {
+        color: #fecc18;
+        font-weight: bolder;
+        background-color: white;
+        padding: 10px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: larger;
+        background-color: rgb(0, 0, 0);
+        color: #fecc18;
+        padding: 20px;
+        border-radius: 40px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(250, 210, 63);
+        color: black;
+        border: 1px solid #fecc18;
+        cursor: pointer;
+      }
+
+      .Title {
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: bolder;
+      }
+      .div2::before {
+        content: "";
+        position: absolute;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/288/original/bike.png?1711124482");
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-size: contain;
+        opacity: 0.3;
+        margin-left: 200px;
+        width: 100%;
+        height: 500px;
+      }
+      .div21 {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .div22 {
+        position: relative;
+        margin: 30px 200px 10px 200px;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.3rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgba(245, 247, 222, 0.3);
+        padding: 20px;
+        line-height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <ul>
+        <li class="Title" style="float: left">Bike'N'Go</li>
+        <li><a href="">Log In</a></li>
+        <li><a href="">Sign Up</a></li>
+        <li><a href="">Home</a></li>
+      </ul>
+    </div>
+    <div class="div2">
+      <div class="div21"><h1>Hello Users...</h1></div>
+      <div class="div22">
+        <p>
+          Welcome to <strong>Bike'N'Go</strong>, the premier destination for
+          <em>hassle-free bike rentals</em>! Whether you're a passionate
+          cyclist, an urban commuter, or a casual explorer, Bike'N'Go offers a
+          seamless solution for your biking needs. At Bike'N'Go, we understand
+          the joy and convenience that biking brings to your life.<br />
+          Our platform is designed to provide you with easy access to
+          high-quality bikes for any occasion, whether it's a leisurely weekend
+          ride, a daily commute, or an adventurous exploration of a new city.
+        </p>
+      </div>
+    </div>
+    <button class="rent">Want to rent a bike🚲</button>
+    <script>
+      function rentBike() {
+        let name = prompt("What is your Name??");
+        let email = prompt("What is your email??");
+        alert("we'll approach you by email");
+        let change = document.querySelector(".div21 h1");
+        change.innerHTML = "Thank You 😊";
+      }
+      let rentButton = document.querySelector("button");
+      rentButton.addEventListener("click", rentBike);
+    </script>
+  </body>
+</html>
