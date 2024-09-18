@@ -3,3 +3,4 @@ A web application that acts as an interface between renters or renting agencies 
 This full-stack project uses HTML, CSS, and JS to build the front end. Scripting is done in JavaScript. 
 MongoDB is used for the back end and database.
 BikeNGo is user-friendly and has user authentication for renters and people who want to rent vehicles. It helps people find the available vehicles for rent.
+ALL THE UPDATED FILES ARE PRESENT IN MASTER BRANCH
